@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up 💛</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js">
+</head>
+<body>
+    <div class="sign-up__container">
+        <div class="left-side" id="main-side">
+            <div class="header-div">
+                <h5>Fihera</h5>
+            </div>
+            <div class="alert-div">
+                <h2>Create your Fihera account</h2>
+            </div>
+         <div class="form-div">
+           <div class="first-box">
+               <h5>Your Name</h5>
+               <input type="text" placeholder="Dea Gashi">
+           </div>
+           <div class="first-box" id="second-box">
+            <h5>E-mail</h5>
+            <input type="email" placeholder="dea@example.com">
+        </div>
+        <div class="first-box" id="third-box">
+            <h5>Password</h5>
+            <div class="password-div">
+           <input type="password" placeholder="At least 8 characters">
+           <img src="Assets/hide password.svg" alt="">
+        </div>
+        </div>
+        <div class="terms-div">
+           
+            <input type="checkbox" >
+            <h5>By creating an account on Fihera,you agree to the <br> <a href="#">Terms & Conditions.</a></h5>
+        
+        </div>
+        <div class="create-div">
+            <button>Create Fihera Account</button>
+            <h5>Already have an account? <a href="#">Sign in</a> </h5>
+        </div>
+         </div>
+        </div>
+        <div class="right-side">
+<div class="container__2">
+<img src="assets/Sign Up Image.png" alt="">
+<div class="information-2">
+    <h2>Unparalleled Templates</h2>
+    <h5>Crafted by a team of proffesional designers, our <br>
+    templates are unparalleled in the market.</h5>
+</div>
+<div class="dot-div">
+    <div class="white-dot"></div>
+    <div class="second-dot"></div>
+    <div class="third-dot"></div>
+    <div class="fourth-dot"></div>
+</div>
+</div>
+        </div>
+        
+    </div>
+    <script>
+  gsap.from('.container__2 img',{
+      opacity:0,
+      y:-10,
+      duration:1,
+  })
+    </script>
+</body>
+</html>

@@ -1,0 +1,831 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    overflow-x: hidden;
+  
+}
+$header-color:#FFFFFF;
+$dark-color:#272343;
+$dark-color-light:#8a8a8a;
+$dark-color-lighten:#f2f2f2;
+$white-color:#fff;
+$green-color:#BAE8E8;
+$dark-grey:#595757;
+$soft-dark:#111111;
+nav{
+    background: $header-color;
+  }
+  ul{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 6rem;
+      
+  }
+  nav ul li{
+      list-style: none;
+  }
+   nav a{
+      text-decoration: none;
+      color: $dark-color;
+  }
+  nav ul li a{
+      color: $dark-color;
+  }
+  .hamburger{
+      display: none;
+  }
+  .get-started__1{
+  background-color: $green-color;
+  display: inline-block;
+  width: 90px;
+  height: 45px;
+  border-radius: 4px;
+  color: $dark-color;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  
+  
+  }
+  .logo{
+      font-weight: 600;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover{
+          color: #003757;
+      }
+  }
+  .padding-div{
+      display: flex;
+      justify-content: center;
+  }
+  .padding-div li{
+      padding: 0 1rem;
+  }
+  .login-div{
+      display: flex;
+      flex-direction: row;
+  }
+  .sign-in{
+      padding-top: 0.8rem;
+      padding-right: 1rem;
+      font-weight: 400;
+      font-size: 0.96rem;
+      transition: 0.3s;
+      cursor: pointer;
+     
+  }
+  .pricing{
+      font-size: 0.96rem;
+      transition: 0.3s;
+      cursor: pointer;
+     
+  }
+  .community{
+      font-size: 0.96rem;
+      transition: 0.3s;
+      cursor: pointer;
+      
+  }
+  .features{
+      font-size: 0.96rem;
+      transition: 0.3s;
+      cursor: pointer;
+     
+  }
+  
+
+  @media only screen and(max-width:1175px){
+    ul{
+        padding: 2rem 7rem;
+    }
+}
+    @media screen and (max-width:1110px){
+        ul{
+            padding: 2rem 5rem;
+        }
+        .first-information{
+            padding-left: 5rem;
+        }
+        .image-holder{
+            padding-right: 5rem;
+        }
+    }
+    @media screen and (max-width:916px){
+        ul{
+            padding: 2rem 3rem;
+        }
+    }
+        @media screen and (max-width:793px){
+            ul{
+                padding: 2rem 1rem;
+            }
+        }
+            @media screen and (max-width:375px){
+                body{
+                    overflow-x: hidden;
+                }
+                nav{
+                   width: 100vw;
+                }
+                .community{
+                    display: none;
+                    
+                }
+                .pricing{
+                    display: none;
+                   
+                }
+                .features{
+                    display: none;
+                }
+                .get-started__1{
+                    display: none;
+                }
+                .sign-in{
+                    display: none;
+                }
+                .logo{
+                    font-size: 1.3rem;
+                }
+                .hamburger{
+                    display: inline-block;
+                }
+                ul{
+                    padding: 2rem 2.5rem;
+                }
+            }
+            .section-1{
+             
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+              background-color: $header-color;
+              width: 100%;
+              height: 620px;
+              padding: 0rem 8rem;
+              padding-bottom: 7rem;
+            }
+            .information-div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                
+            }
+           
+            .img-div{
+                display: flex;
+                justify-content: center;
+               
+            }
+            .img-div img{
+                width: 500px;
+                height: 500px;
+                animation-name: imganimation;
+                animation-duration: 1.5s;
+
+            }
+            @keyframes imganimation{
+                from{
+                    transform: translateY(15px);
+                    opacity: 0;
+                }
+                to{
+                    transform: translateY(0px);
+                    opacity: 1;
+                }
+            }
+            .star-div{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+        opacity: 1;  
+            }
+          
+          
+            .star-images{
+                display: flex;
+                flex-direction: row;
+             
+            }
+            .star-images img{
+                padding: 0rem 0.2rem;
+                width: 20px;
+            }
+            .star-information{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+            .star-information h5{
+                color: $dark-grey;
+                font-weight: 500;
+            }
+          
+            .p-div{
+                display: flex;
+                color: $dark-color-light;
+             padding-top: 0.5rem;
+            }
+            .p-div h5{
+                font-weight: 400;
+            }
+            .link-div{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+               padding:1rem 0rem
+            }
+            .link-div  a{
+                padding: 0rem 1.5rem;
+                font-size: 0.89rem;
+               
+            }
+            .link-div button{
+                background-color: $green-color;
+                display: inline-block;
+                width: 140px;
+                height: 45px;
+                border-radius: 4px;
+                color: $dark-color;
+                outline: none;
+                border: none;
+                font-weight: 600;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            .link-div a{
+                color: $dark-color;
+                font-weight: 550;
+            }
+            .tick-div{
+                display: flex;
+            }
+            .tick-div p{
+                color: $dark-color-light;
+                font-weight: 400;
+                font-size: 0.89rem;
+            }
+            .first-tick{
+                display: flex;
+                flex-direction: row;
+                
+            }
+            .first-tick  p{
+                padding: 0rem 0.5rem;
+                
+            }
+            .second-tick{
+                display: flex;
+                flex-direction: row;
+                
+            }
+            .second-tick p{
+                padding: 0rem 0.5rem;
+            }
+
+            .tick-div img{
+            width: 15px;
+            }
+            .header-div h1{
+                font-size: 3rem;
+                padding-top: 0.5rem;
+            }
+            @media screen and (max-width:1089px){
+                .section-1{
+                    padding: 0rem 6rem;
+                    position: relative;
+                    padding-bottom: 8rem;
+                   
+                }
+            }
+            @media screen and (max-width:991px){
+                .section-1{
+                    padding: 0rem 4em;
+                    padding-bottom: 8rem;
+                }
+            }
+            @media screen and (max-width:901px){
+                .section-1{
+                    padding: 0rem 2em;
+                    padding-bottom: 8rem;
+                }
+            }
+            @media screen and (max-width:887px){
+                .section-1{
+                    padding: 0rem 2rem;
+                    padding-bottom: 8rem;
+                }
+                 .img-div img{
+                   width: 400px;
+                }
+                .information-div{
+                    transform: scale(0.8);
+                }
+
+            }
+           
+        .section-2{
+            display: flex ;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items:flex-start;
+            display: block;
+            padding: 4rem 7rem;
+            background:$dark-color;
+        }
+        .text-part{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        .text-part p{
+            font-weight: 600;
+            color: $green-color;
+            
+        }
+        .text-part h3{
+            padding-top: 0.7rem;
+            font-size: 1.7rem;
+            color: $white-color;
+        }
+        .card-1{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+        }
+        .card-section{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+           padding-top: 2rem;
+        }
+        .card-1 img{
+            width: 30px;
+            
+        }
+        .card-1 h5{
+            padding-top: 0.5rem;
+            color: $green-color;
+        }
+        .card-1 p{
+            padding-top: 0.7rem;
+            color: $dark-color-light;
+
+        }
+        .card-section div{
+            padding: 0rem 1rem;
+        }
+        .section-3{
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            align-items: center;
+background: $dark-color;
+           }
+           .wrapper{
+               display: flex;
+               flex-direction: row;
+               background: $green-color;
+               width: 1100px;
+               border-radius: 8px;
+               height: 400px;
+               justify-content: space-between;
+               align-items: center;
+               color: $dark-color;
+               overflow:hidden;
+           }
+           .info-div{
+               display: flex;
+               flex-direction: column;
+               padding-left: 4rem;
+           }
+           .info-div p{
+               padding-top: 0.7rem;
+               color: $dark-color;
+               font-weight: 300;
+           }
+           .info-div button{
+               width: 130px;
+               height: 45px;
+               background: $dark-color;
+               outline: none;
+               border: none;
+               border-radius: 3px;
+               color: $green-color;
+               font-weight: 600;
+               letter-spacing: 0.1px;
+               margin-top: 0.7rem;
+           }
+           
+           .thirdimg-box{
+               padding-top: 2rem;
+               padding-right: 4rem;
+           }
+           .thirdimg-box img{
+             width: 500px;
+           }
+           .section-4{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 3rem 12rem;
+ overflow-x: scroll;
+            
+        }
+        .portofolio-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            border: 1px solid rgb(235, 235, 235);
+            width: 340px;
+            height: 250px;
+            border-radius: 4px;
+          padding: 0rem 8rem;
+         
+        }
+        .first-part{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+          padding-top: 0.5rem;
+padding-right: 7rem;
+        }
+        .name-div{
+            display: flex;
+            flex-direction: column;
+            padding: 0.4rem 0.6rem;
+        }
+        .name-div h5{
+            color: $dark-color;
+        }
+        .name-div p{
+            font-size: 0.89rem;
+        }
+        .info__div{
+        display: flex;
+        flex-direction: column;
+         transform: translateY(0px);
+        }
+        .info__div p{
+            font-size: 0.94rem;
+
+        }
+        .info__div button{
+            width:  300px;
+            height: 45px;
+            background-color: $white-color;
+            border: 1px solid rgb(235, 235, 235);
+            color: $dark-color;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: 0.3s;
+            cursor: pointer;
+            transform: translateY(12px);
+&:hover{
+    background: $green-color;
+    color: $dark-color;
+    border: 1px solid $green-color;
+}
+        }
+        .portofolio-card {
+            padding: 0.4rem 1rem;
+        }
+        #portofolio-1 p{
+            font-size: 0.94rem;
+            padding-bottom: -6rem;
+        }
+       
+       #portofolio-1,#portofolio-2,
+       #portofolio-3{
+           margin-right: 1rem;
+       }
+  
+        @media screen and (max-width:1234px){
+            .section-4{
+                padding: 3rem 5rem;
+            }
+        }
+           @media screen and (max-width:1117px){
+               .wrapper{
+                   transform: scale(0.8);
+               }
+               .section-4{
+                   transform: scale(0.9);
+                   padding:3rem 3rem;
+               }
+
+           }
+           @media screen and (max-width:1030px){
+               .section-4{
+                   flex-direction: column;
+                   transform: scale(1.1);
+                   
+
+               }
+               #portofolio-1,#portofolio-2,
+               #portofolio-3{
+                   margin-top: 1rem;
+               }
+           }
+           @media screen and (max-width:887px){
+            .img-div img{
+                width: 460px;
+             transform: scale(0.85);
+            }
+        }
+           @media screen and (max-width:821px){
+               .wrapper{
+                   transform: scale(0.9);
+               }
+               .info-div{
+                   padding-left: 1rem;
+
+               }
+               .thirdimg-box{
+                   padding-right: 1rem;
+                   padding-top: 6rem;
+               }
+               .thirdimg-box img{
+                   width: 430px;
+               }
+           }
+           footer{
+            background:rgb(244, 244, 244);
+            display: flex;
+            flex-direction: row;
+           justify-content: space-evenly;
+    height: 200px;
+    align-items: center;
+        }
+    
+        .footer-col{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+         
+        }
+        .footer-col p{
+            padding: 0.2rem 0rem;
+            color: $dark-grey;
+            font-size: 0.89rem;
+        }
+        .footer-col h5{
+            padding-bottom: 0.2rem;
+        }
+        .footer-p{
+            padding-top: 0.8rem;
+        }
+         @media screen and (max-width:768px){
+       
+               .section-1 {
+                   flex-direction: column-reverse;
+                   padding: 2rem 0rem;
+               
+               }
+       
+               .img-div img{
+                   width:400px;
+                   height: auto;
+               }
+               .information-div{
+                   transform: scale(0.7);
+               }
+              .card-section{
+                  flex-direction: column;
+                  justify-content: flex-start;
+                  align-items: flex-start;
+              }
+              .card-section div{
+                  padding: 1rem 0rem;
+              } 
+              .wrapper{
+                  flex-direction: column;
+                  height: 600px;
+                  width: 600px;
+                  padding: 2rem 0rem;
+              }
+              footer{
+                  flex-direction: column;
+                  justify-content: flex-start;
+                  align-items: flex-start;
+                  height: 700px;
+                  padding: 2rem 4rem;
+              }
+              .footer-col{
+                  padding: 1rem 0rem;
+              }
+           }
+           @media screen and (max-width:414px){
+               body{
+                   overflow-x: hidden;
+               }
+            .community{
+                display: none;
+                
+            }
+            .pricing{
+                display: none;
+               
+            }
+            .features{
+                display: none;
+            }
+            .get-started__1{
+                display: none;
+            }
+            .sign-in{
+                display: none;
+            }
+            .logo{
+                font-size: 1.3rem;
+            }
+            .hamburger{
+                display: inline-block;
+            }
+            ul{
+                padding: 2rem 2.5rem;
+            }
+        }  
+           
+           @media screen and (max-width:375px){
+      body{
+          overflow-x: hidden;
+          max-width: 375px;
+          
+      }
+               .header-div h1{
+                   font-size: 2.7rem;
+               }
+               .img-div img{
+                   width: 320px;
+              height: auto;
+                   display: inline-block;
+               }
+               .img-div{
+               margin-bottom: -3rem;
+               }
+               .star-div{
+                   display: none;
+               }
+               .p-div h5{
+                   font-size: 1.3rem;
+               }
+               .link-div{
+                   flex-direction: column;
+                  padding-top: 1rem;
+               }
+               .link-div a{
+                   padding:0.5rem 2rem;
+                   font-size:1.3rem;
+               }
+               .link-div button{
+                   width: 400px;
+                   height: 60px;
+                   font-size: 1.3rem;
+               }
+               .section-1{
+                   height: 718px;
+                  padding-bottom: 1rem;
+                  overflow: hidden;
+                 
+               }
+               .tick-div{
+                   flex-direction: column;
+                 
+               }
+               .tick-div p{
+                font-size: 1.3rem;
+               }
+               .tick-div img{
+                   width: 25px;
+               }
+               .second-tick{
+                   padding-top: 0.89rem;
+               }
+               .information-div{
+                   padding-bottom: 4rem;
+               }
+               .section-2{
+                   align-items: flex-start;
+                   justify-content: flex-start;
+                   padding: 4rem 3rem;
+                   overflow: hidden;
+             
+               }
+              .wrapper{
+                  width: 330px;
+                  height: 800px;
+                  overflow: hidden;
+                 
+              }
+              .info-div{
+                  padding: 2rem 2rem;
+              }
+             .info-div h1{
+                 font-size: 2.3rem;
+             }
+             .info-div p{
+                 font-size: 1.3rem;
+             }
+              .info-div button{
+                  width: 250px;
+                  height: 68px;
+                  font-size: 1.1rem;
+              } 
+              .thirdimg-box{
+                  width: 210px;
+                  height: 400px;
+                background: $white-color;
+                  margin-right: 0.9rem;
+                  margin-top: 2.1rem;
+                  z-index: 2;
+                  border-radius: 5px;
+                  position: relative;
+                  overflow: hidden;
+                  transform: scale(1.22);
+                 
+              }
+              .thirdimg-box img{
+                 position: absolute;
+                 transform: scale(2.13);
+                 padding-right: 7rem;
+                 padding-top: 1rem;
+              }
+              .section-4{
+                flex-direction: column;
+               overflow:hidden;
+              padding:0rem;
+             margin-left: 3rem;
+             margin-top: 3rem;
+             margin-bottom: 5rem;
+              
+               
+            }
+            .name-div{
+                height: 70px;
+                width: 200px;
+                padding-right: 0px;
+                
+            }
+            .first-part{
+                padding-left: 6rem;
+                padding-right: none;
+            }
+            .portofolio-card{
+                width: 300px;
+                height: 300px;
+                display: flex;
+            }
+            #portofolio-1,#portofolio-2,
+            #portofolio-3{
+                margin-top: 2rem;
+            }
+            .info__div p{
+              
+              height: 140px;
+              font-size: 1rem;
+              padding-left: 1rem;
+            }
+            .info__div button{
+                width: 210px;
+                height: 50px;
+                transform: translateX(30px);
+            }
+           
+     footer{
+        padding: 5rem 4rem;
+      
+        height: 750px;
+     }
+   
+           }
+           @media screen and (max-width:320px){
+               body{
+                   overflow-x: hidden;
+                   max-width: 320px;
+               }
+               
+           }
+        
+        
+    
+          
+           
+      

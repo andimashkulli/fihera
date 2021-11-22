@@ -3,9 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    
 }
 body{
-    overflow-x: hidden;
+    overflow-x:hidden;
   
 }
 $header-color:#FFFFFF;
@@ -593,6 +594,9 @@ padding-right: 7rem;
             padding-top: 0.8rem;
         }
          @media screen and (max-width:768px){
+             body{
+                 overflow-x: hidden;
+             }
        
                .section-1 {
                    flex-direction: column-reverse;
@@ -601,8 +605,8 @@ padding-right: 7rem;
                }
        
                .img-div img{
-                   width:400px;
-                   height: auto;
+                   width:auto;
+                   
                }
                .information-div{
                    transform: scale(0.7);
@@ -632,6 +636,45 @@ padding-right: 7rem;
                   padding: 1rem 0rem;
               }
            }
+           @media screen and (max-width:500px){
+               .img-div {
+                   transform: translateY(30px)
+               
+               }
+               .img-div img{
+                   transform:scale(0.7);
+               }
+               .section-1{
+                   transform: translateY(-100px);
+               }
+                .community{
+                display: none;
+                
+            }
+            .pricing{
+                display: none;
+               
+            }
+            .features{
+                display: none;
+            }
+            .get-started__1{
+                display: none;
+            }
+            .sign-in{
+                display: none;
+            }
+            .logo{
+                font-size: 1.3rem;
+            }
+            .hamburger{
+                display: inline-block;
+            }
+            ul{
+                padding: 2rem 2.5rem;
+            }
+        }  
+           
            @media screen and (max-width:414px){
                body{
                    overflow-x: hidden;
